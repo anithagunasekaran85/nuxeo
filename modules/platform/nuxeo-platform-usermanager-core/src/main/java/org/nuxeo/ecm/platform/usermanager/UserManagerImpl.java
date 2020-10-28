@@ -1300,10 +1300,13 @@ public class UserManagerImpl implements UserManager, MultiTenantUserManager, Adm
         }
         DocumentModel userModel = getUserModel(username, context, fetchReferences);
         if (userModel != null) {
-            return makePrincipal(userModel);
+            NuxeoPrincipal principal = makePrincipal(userModel);
+            principal.setIsPartial(!fetchReferences);
+            return principal;
         }
         return null;
     }
+
     @Override
     public DocumentModelList searchGroups(String pattern, DocumentModel context) {
         QueryBuilder queryBuilder = getQueryForPattern(pattern, groupDirectoryName, groupSearchFields,

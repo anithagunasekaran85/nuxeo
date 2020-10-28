@@ -261,6 +261,16 @@ public class TestSearchRequestFilter {
             public String getName() {
                 return "admin";
             }
+
+            @Override
+            public void setIsPartial(boolean partial) {
+                throw new UnsupportedOperationException();
+            }
+
+            @Override
+            public boolean isPartial() {
+                throw new UnsupportedOperationException();
+            }
         };
     }
 
@@ -411,6 +421,16 @@ public class TestSearchRequestFilter {
             @Override
             public String getName() {
                 return "jdoe";
+            }
+
+            @Override
+            public void setIsPartial(boolean partial) {
+                throw new UnsupportedOperationException();
+            }
+
+            @Override
+            public boolean isPartial() {
+                throw new UnsupportedOperationException();
             }
         };
     }

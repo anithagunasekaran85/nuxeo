@@ -252,4 +252,14 @@ public class UserPrincipal implements NuxeoPrincipal, Serializable {
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
     }
+
+    @Override
+    public void setIsPartial(boolean partial) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public boolean isPartial() {
+        return false;
+    }
 }
