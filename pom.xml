@@ -156,8 +156,8 @@
 
     <kafka.version>2.6.0</kafka.version>
     <confluent.version>6.0.0</confluent.version>
-    <chronicle.bom.version>2.20.40</chronicle.bom.version>
-    <chronicle.threads.version>2.17.25</chronicle.threads.version>
+    <chronicle.bom.version>2.20.149</chronicle.bom.version>
+    <chronicle.threads.version>2.20.101</chronicle.threads.version>
     <metrics.version>5.0.0-rc3</metrics.version>
     <maven.surefire.version>2.22.2</maven.surefire.version>
     <opencensus.version>0.27.1</opencensus.version>
